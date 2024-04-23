@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "knex": "node --loader tsx ./node_modules/.bin/knex",
     "lint": "eslint src -c .ts",
     "dev": "tsx watch src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,9 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
-    "@types/node": "^20.12.7",
     "eslint": "^9.1.1",
-    "tsx": "^4.7.2",
+    "tsx": "^3.14.0",
     "typescript": "^5.4.5"
   },
   "dependencies": {
